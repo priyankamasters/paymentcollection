@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Payment Collection</string>
+    <string name="action_settings">Settings</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/qr_scan"
+        android:id="@+id/img_btn_scan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+    <TextView
+        android:text="Customer id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_customer_id"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_customer_id_val"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Customer name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_customer_name"
+            android:layout_alignParentRight="true"
+             />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txt_customer_name_val"
+            android:layout_alignParentLeft="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCell" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/date"
+            android:textColor="#ffffff" >
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/description"
+            android:textColor="#ffffff" >
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/debit"
+            android:textColor="#ffffff" >
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/credit"
+            android:textColor="#ffffff" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <TextView
+        android:text="Amount"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_amount"
+        android:layout_gravity="end"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText" />
+    </LinearLayout>
+</LinearLayout>
