@@ -7,5 +7,8 @@
     <string name="description">Description</string>
     <string name="debit">Debit</string>
     <string name="credit">Credit</string>
+    <string name="customer_id">Customer id</string>
+    <string name="customer_name">Customer name</string>
+    <string name="settings">Settings</string>
 
 </resources>
